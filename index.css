@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+.flex {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container {
+  display: inline-block;
+  text-align: left;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+input {
+  width: 80px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 15px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.formula-box {
+  font-size: 18px;
+  margin-top: 15px;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: left;
+  max-width: 90%;
+  overflow-x: auto;
+  word-wrap: break-word;
+}
+
+.math-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  max-width: 100%;
+  padding: 10px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .formula-box {
+    font-size: 16px;
+  }
+  .container {
+    padding: 10px;
+  }
+}

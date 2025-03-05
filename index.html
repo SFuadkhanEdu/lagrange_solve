@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagrange Interpolation</title>
+    <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <h2>Lagrange Interpolation Solver</h2>
+
+    <div class="formula-box">
+        <p><b>General Lagrange Formula:</b></p>
+        <div class="math-container">
+            $$
+            P(x) = \sum_{i=0}^{n-1} y_i \prod_{\substack{j=0 \\ j\neq i}}^{n-1}
+            \frac{x - x_j}{x_i - x_j}
+            $$
+        </div>
+        <hr>
+        <p><b>Specific Formula:</b></p>
+        <div class="math-container" id="specificFormula">
+            Enter points to generate formula
+        </div>
+    </div>
+    <div class="flex">
+        <label for="numPoints">Enter number of points (n):</label>
+        <input type="number" id="numPoints" min="1" value="3">
+        <button onclick="generateInputs()">Generate Inputs</button>
+
+        <div class="container" id="inputContainer"></div>
+
+
+    </div>
+    <button onclick="calculateLagrange()">Calculate</button>
+    <h3>Result:</h3>
+    <p id="result"></p>
+</body>
+
+</html>
