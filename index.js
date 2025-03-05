@@ -66,7 +66,7 @@ function generateSpecificFormula(points) {
     for (let j = 0; j < points.length; j++) {
       if (i !== j) {
         subTerms.push(
-          `\\frac{x - ${points[j].x}}{${points[i].x} - ${points[j].x}}`
+          `\\frac{x - x_${j}}{x_${i} - x_${j}}`
         );
       }
     }

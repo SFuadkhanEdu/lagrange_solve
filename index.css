@@ -69,7 +69,12 @@ button:hover {
   padding: 10px;
   display: block;
 }
-
+#result{
+    background-color: white;
+    display: inline;
+    padding: 15px 10px;
+    border-radius: 30px;
+}
 @media (max-width: 768px) {
   .formula-box {
     font-size: 16px;
